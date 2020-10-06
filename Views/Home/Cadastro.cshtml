@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -24,7 +26,7 @@
                     </div>
                 </div>
                 <form method="post">
-                    <input type="hidden" name="id" value="@Model.Id"/>
+                    <input type="hidden" name="id" value="@Model.Id" />
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             <label for="Nome">Nome</label>
@@ -35,8 +37,8 @@
                         <div class="form-group col-md-4">
                             <label for="TipoDocumento">Tipo de Documento</label>
                             <select id="TipoDocumento" name="TipoDocumento" class="form-control">
-                                <option selected="@(Model.TipoDocumento == "CPF" ? "selected" : "")">CPF</option>
-                                <option selected="@(Model.TipoDocumento == "CNPJ" ? "selected" : "")">CNPJ</option>
+                                <option @(Model.TipoDocumento == "CPF" ? "selected" : "")>CPF</option>
+                                <option @(Model.TipoDocumento == "CNPJ" ? "selected" : "")>CNPJ</option>
                             </select>
                         </div>
                         <div class="form-group col-md-8">
@@ -56,7 +58,7 @@
                         </div>
                         <div class="form-group col-md-8">
                             <label for="Telefone">Telefone</label>
-                            <input type="text" class="form-control" id="Telefone" name="Telefone" value="@Model.Telefone">
+                            <input type="tel" class="form-control" id="Telefone" name="Telefone" value="@Model.Telefone">
                         </div>
                     </div>
 
@@ -86,5 +88,15 @@
             </div>
         </div>
     </div>
+    <script>
+        $("#Documento").mask("99.999.999/9999-99");
+        $('#TipoDocumento').change(function () {
+            if ($('#TipoDocumento option:selected').val() == 'CPF') {
+                $("#Documento").mask("999.999.999-99");
+            } else {
+                $("#Documento").mask("99.999.999/9999-99");
+            }
+        });
+    </script>
 </body>
 </html>

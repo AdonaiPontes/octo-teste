@@ -2,6 +2,9 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "jQuery.InputMask/5.0.5": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Antiforgery/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -3258,6 +3261,23 @@
     }
   },
   "libraries": {
+    "jQuery.InputMask/5.0.5": {
+      "sha512": "EdfCcNHEulHTV9wGoMgaW/Ch//pHVlSbZeQxTkkC91wNICVw7K4ePp3bcI4ZBU8d3sCxIx5aebNk4c3gTENJmw==",
+      "type": "package",
+      "path": "jquery.inputmask/5.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Readme.txt",
+        "content/Scripts/inputmask/bindings/inputmask.binding.js",
+        "content/Scripts/inputmask/inputmask.js",
+        "content/Scripts/inputmask/inputmask.min.js",
+        "content/Scripts/inputmask/jquery.inputmask.js",
+        "content/Scripts/inputmask/jquery.inputmask.min.js",
+        "jquery.inputmask.5.0.5.nupkg.sha512",
+        "jquery.inputmask.nuspec"
+      ]
+    },
     "Microsoft.AspNetCore.Antiforgery/2.2.0": {
       "sha512": "fVQsSXNZz38Ysx8iKwwqfOLHhLrAeKEMBS5Ia3Lh7BJjOC2vPV28/yk08AovOMsB3SNQPGnE7bv+lsIBTmAkvw==",
       "type": "package",
@@ -9870,27 +9890,28 @@
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.8",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.4",
       "X.PagedList >= 8.0.7",
-      "X.PagedList.Mvc.Core >= 8.0.7"
+      "X.PagedList.Mvc.Core >= 8.0.7",
+      "jQuery.InputMask >= 5.0.5"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\leand\\.nuget\\packages\\": {},
+    "C:\\Users\\AdonaiPontes\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Leandro\\Projects\\novak\\OCTOTeste\\OCTOTeste.csproj",
+      "projectUniqueName": "C:\\Users\\AdonaiPontes\\source\\repos\\octo-teste\\OCTOTeste.csproj",
       "projectName": "OCTOTeste",
-      "projectPath": "D:\\Leandro\\Projects\\novak\\OCTOTeste\\OCTOTeste.csproj",
-      "packagesPath": "C:\\Users\\leand\\.nuget\\packages\\",
-      "outputPath": "D:\\Leandro\\Projects\\novak\\OCTOTeste\\obj\\",
+      "projectPath": "C:\\Users\\AdonaiPontes\\source\\repos\\octo-teste\\OCTOTeste.csproj",
+      "packagesPath": "C:\\Users\\AdonaiPontes\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\AdonaiPontes\\source\\repos\\octo-teste\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\leand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\AdonaiPontes\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -9944,6 +9965,10 @@
           "X.PagedList.Mvc.Core": {
             "target": "Package",
             "version": "[8.0.7, )"
+          },
+          "jQuery.InputMask": {
+            "target": "Package",
+            "version": "[5.0.5, )"
           }
         },
         "imports": [

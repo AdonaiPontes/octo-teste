@@ -16,21 +16,6 @@ namespace OCTOTeste.Controllers
         public HomeController(DatabaseContext db)
         {
             _db = db;
-            //for (int i = 1; i <= 100; i++)
-            //{
-            //    _db.Clientes.Add(new Cliente(
-            //        i,
-            //        $"Roberto {i}",
-            //        $"{i}{i}{i}",
-            //        "CPF",
-            //        $"{i} {i}{i}{i}",
-            //        "Celular",
-            //        $"Rua A, n. {i}",
-            //          "Residencial"
-            //        ));
-            //}
-
-            //_db.SaveChanges();
         }
 
         public IActionResult Index(int? pagina)

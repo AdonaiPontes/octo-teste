@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Leandro\\Projects\\novak\\OCTOTeste\\OCTOTeste.csproj": {}
+    "C:\\Users\\AdonaiPontes\\source\\repos\\octo-teste\\OCTOTeste.csproj": {}
   },
   "projects": {
-    "D:\\Leandro\\Projects\\novak\\OCTOTeste\\OCTOTeste.csproj": {
+    "C:\\Users\\AdonaiPontes\\source\\repos\\octo-teste\\OCTOTeste.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Leandro\\Projects\\novak\\OCTOTeste\\OCTOTeste.csproj",
+        "projectUniqueName": "C:\\Users\\AdonaiPontes\\source\\repos\\octo-teste\\OCTOTeste.csproj",
         "projectName": "OCTOTeste",
-        "projectPath": "D:\\Leandro\\Projects\\novak\\OCTOTeste\\OCTOTeste.csproj",
-        "packagesPath": "C:\\Users\\leand\\.nuget\\packages\\",
-        "outputPath": "D:\\Leandro\\Projects\\novak\\OCTOTeste\\obj\\",
+        "projectPath": "C:\\Users\\AdonaiPontes\\source\\repos\\octo-teste\\OCTOTeste.csproj",
+        "packagesPath": "C:\\Users\\AdonaiPontes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AdonaiPontes\\source\\repos\\octo-teste\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\leand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AdonaiPontes\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -71,6 +71,10 @@
             "X.PagedList.Mvc.Core": {
               "target": "Package",
               "version": "[8.0.7, )"
+            },
+            "jQuery.InputMask": {
+              "target": "Package",
+              "version": "[5.0.5, )"
             }
           },
           "imports": [

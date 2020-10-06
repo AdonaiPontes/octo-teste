@@ -31,6 +31,7 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.4",
           "X.PagedList": "8.0.7",
           "X.PagedList.Mvc.Core": "8.0.7",
+          "jQuery.InputMask": "5.0.5",
           "Microsoft.AspNetCore.Antiforgery.Reference": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -307,6 +308,7 @@
           "OCTOTeste.dll": {}
         }
       },
+      "jQuery.InputMask/5.0.5": {},
       "Microsoft.AspNetCore.Antiforgery/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.DataProtection": "2.2.0",
@@ -4284,6 +4286,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "jQuery.InputMask/5.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EdfCcNHEulHTV9wGoMgaW/Ch//pHVlSbZeQxTkkC91wNICVw7K4ePp3bcI4ZBU8d3sCxIx5aebNk4c3gTENJmw==",
+      "path": "jquery.inputmask/5.0.5",
+      "hashPath": "jquery.inputmask.5.0.5.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Antiforgery/2.2.0": {
       "type": "package",
