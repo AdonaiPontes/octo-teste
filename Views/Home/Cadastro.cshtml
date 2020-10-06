@@ -1,0 +1,90 @@
+﻿@model OCTOTeste.Models.Cliente
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap CRUD Data Table for Database with Modal Form</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="table-responsive">
+            <div class="table-wrapper">
+                <div class="table-title">
+                    <div class="row">
+                        <h2><b>Cliente</b></h2>
+                    </div>
+                </div>
+                <form method="post">
+                    <input type="hidden" name="id" value="@Model.Id"/>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="Nome">Nome</label>
+                            <input type="text" name="Nome" class="form-control" id="Nome" value="@Model.Nome">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="TipoDocumento">Tipo de Documento</label>
+                            <select id="TipoDocumento" name="TipoDocumento" class="form-control">
+                                <option selected="@(Model.TipoDocumento == "CPF" ? "selected" : "")">CPF</option>
+                                <option selected="@(Model.TipoDocumento == "CNPJ" ? "selected" : "")">CNPJ</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="Documento">Documento</label>
+                            <input type="text" class="form-control" id="Documento" name="Documento" value="@Model.Documento">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="TipoTelefone">Tipo de Telefone</label>
+                            <select id="TipoTelefone" name="TipoTelefone" class="form-control">
+                                <option selected="@(Model.TipoTelefone == "Celular" ? "selected" : "")">Celular</option>
+                                <option selected="@(Model.TipoTelefone == "Residencial" ? "selected" : "")">Residencial</option>
+                                <option selected="@(Model.TipoTelefone == "Comercial" ? "selected" : "")">Comercial</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="Telefone">Telefone</label>
+                            <input type="text" class="form-control" id="Telefone" name="Telefone" value="@Model.Telefone">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="TipoEndereco">Tipo de Endereço</label>
+                            <select id="TipoEndereco" name="TipoEndereco" class="form-control">
+                                <option selected="@(Model.TipoEndereco == "Cobrança" ? "selected" : "")">Cobrança</option>
+                                <option selected="@(Model.TipoEndereco == "Comercial" ? "selected" : "")">Comercial</option>
+                                <option selected="@(Model.TipoEndereco == "Correspondência" ? "selected" : "")">Correspondência</option>
+                                <option selected="@(Model.TipoEndereco == "Entrega" ? "selected" : "")">Entrega</option>
+                                <option selected="@(Model.TipoEndereco == "Residencial" ? "selected" : "")">Residencial</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="Endereco">Endereço</label>
+                            <input type="text" class="form-control" id="Endereco" name="Endereco" value="@Model.Endereco">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-success">Salvar cliente</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
