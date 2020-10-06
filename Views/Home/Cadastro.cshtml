@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap CRUD Data Table for Database with Modal Form</title>
+    <title>OCTO Beer - alterar/cadastrar clientes</title>
     <link href="/css/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -51,9 +51,9 @@
                         <div class="form-group col-md-4">
                             <label for="TipoTelefone">Tipo de Telefone</label>
                             <select id="TipoTelefone" name="TipoTelefone" class="form-control">
-                                <option selected="@(Model.TipoTelefone == "Celular" ? "selected" : "")">Celular</option>
-                                <option selected="@(Model.TipoTelefone == "Residencial" ? "selected" : "")">Residencial</option>
-                                <option selected="@(Model.TipoTelefone == "Comercial" ? "selected" : "")">Comercial</option>
+                                <option @(Model.TipoTelefone == "Celular" ? "selected" : "")>Celular</option>
+                                <option @(Model.TipoTelefone == "Residencial" ? "selected" : "")>Residencial</option>
+                                <option @(Model.TipoTelefone == "Comercial" ? "selected" : "")>Comercial</option>
                             </select>
                         </div>
                         <div class="form-group col-md-8">
@@ -66,11 +66,11 @@
                         <div class="form-group col-md-4">
                             <label for="TipoEndereco">Tipo de Endereço</label>
                             <select id="TipoEndereco" name="TipoEndereco" class="form-control">
-                                <option selected="@(Model.TipoEndereco == "Cobrança" ? "selected" : "")">Cobrança</option>
-                                <option selected="@(Model.TipoEndereco == "Comercial" ? "selected" : "")">Comercial</option>
-                                <option selected="@(Model.TipoEndereco == "Correspondência" ? "selected" : "")">Correspondência</option>
-                                <option selected="@(Model.TipoEndereco == "Entrega" ? "selected" : "")">Entrega</option>
-                                <option selected="@(Model.TipoEndereco == "Residencial" ? "selected" : "")">Residencial</option>
+                                <option @(Model.TipoEndereco == "Cobrança" ? "selected" : "")>Cobrança</option>
+                                <option @(Model.TipoEndereco == "Comercial" ? "selected" : "")>Comercial</option>
+                                <option @(Model.TipoEndereco == "Correspondência" ? "selected" : "")">Correspondência</option>
+                                <option @(Model.TipoEndereco == "Entrega" ? "selected" : "")>Entrega</option>
+                                <option @(Model.TipoEndereco == "Residencial" ? "selected" : "")>Residencial</option>
                             </select>
                         </div>
                         <div class="form-group col-md-8">
